@@ -1,0 +1,25 @@
+conda activate fth01 
+python3 run_sim01.py --cluster_spec=n32g4.csv --trace_file=60_job.csv
+
+python3 run_sim01.py --cluster_spec=n32g4.csv
+python run_sim01.py --cluster_spec=n32g4.csv --trace_file=60_job.csv
+
+python2.7 run_sim.py --cluster_spec=n32g4.csv --print --scheme=yarn --trace_file=480_job.csv --schedule=dlas --log_path=test_1
+python run_sim01.py --cluster_spec=n32g4.csv --trace_file=60_job.csv --schedule=fifo --log_path=test_1
+
+python2.7 run_sim.py --cluster_spec=n32g4.csv --print --scheme=yarn --trace_file=480_job.csv --schedule=fifo --log_path=test_1
+
+
+python2.7 run_sim.py --cluster_spec=n32g4.csv  --trace_file=60_job.csv --schedule=fifo --log_path=test_1
+
+
+python2.7 run_sim.py --cluster_spec=n32g4.csv --trace_file=60_job.csv --schedule=fifo --log_path=test_1
+
+todo :
+
+''' prepare logging '''
+    #LOG01.init_log01()
+
+    ''' Prepare jobs'''
+    #JOBS01.prepare_job_start_events01()
+    
